@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question3</title>
+    <style>
+        h1{
+            font-size: 30px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            text-align: center;
+            margin:90px auto;
+
+        }
+        form{
+            text-align:center;
+        }
+        input{
+            padding:12px;
+        }
+        #result{
+            font-size:22px;
+            font-family: calibri;
+            color:red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>calculate factorial of a number</h1>
+    <form id="form">
+        <input type="number" name="" id="number"><br><br>
+        <input type="submit" value="calculate">
+    </form>
+    <p id="result"></p>
+
+<script>
+    var frm=document.getElementById("form");
+    frm.onsubmit=function(){
+        var num=document.getElementById("number").value;
+           var result=document.getElementById("result");
+           var i,mult=1;
+           for(i=1;i<=num;i++){
+               mult=mult*i;
+           }
+           result.innerHTML=mult;
+           alert("Are you sure?");
+           return false;
+    }
+ </script>
+</body>
+</html>
