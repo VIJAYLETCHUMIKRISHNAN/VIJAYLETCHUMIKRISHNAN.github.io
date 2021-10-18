@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question5</title>
+    
+    <style>
+        h1{
+            font-size: 30px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            text-align: center;
+            margin:100px auto;
+
+        }
+        .container{
+            text-align:center;
+        }
+        input{
+            padding:12px;
+        }
+        #result{
+            font-size:30px;
+            font-family: calibri;
+            color:blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CountVowel</h1>
+   <div class="container">
+    <input type="text" id="textarea" placeholder="TYPE A WORD TO CHECK"><br><br>
+    <button type="button" onclick="findVowels()">Calculate</button>
+       <p id="result"></p>
+       </div>
+
+    </form>
+    
+    <script>
+        function findVowels(){
+          //set an array of vowels here
+          var vowels = ['a', 'e', 'i', 'o', 'u','A', 'E', 'I', 'O', 'U'];
+          var vowelsFound = [];
+          //get the string from textbox
+          var txt = document.getElementById("textarea").value;
+          //loop each character from string and find the vowels
+          for(i=0; i < txt.length; i++){
+              if(vowels.indexOf(txt[i]) != -1){
+                  vowelsFound.push(txt[i]);
+              }
+          }
+          document.getElementById("result").innerHTML = "<p><strong>TYPE OF VOWEL FOUND: </strong> "+ vowelsFound +"</p><p><strong>NUMBER OF VOWEL FOUND:</strong> "+ vowelsFound.length +"</p>";
+          alert("succesfully calculated" )
+        }
+      </script>
+</body>
+</html>
