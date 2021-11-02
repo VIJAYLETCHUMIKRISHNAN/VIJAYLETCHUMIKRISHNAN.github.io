@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light Hotel Booking</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="index.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Table Booking App - Main Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 
 <body>
+    <div class="container-fluid">
+        <!-- Nav Bar -->
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">Table Booking App</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <div class="header"  style="font-family:Times New Roman;">
-
-        <a href="#default" class="logo"><i class="fa fa-building"  style="font-size:30px"></i> LIGHT HOTEL</a>
-        <div class="header-right">
-        <a href="index.html"><i class="fa fa-home" style="font-size:20px"> </i> Home</a>
-        <a href="book.html"><i class="fa fa-calendar" style="font-size:20px"> </i> Booking</a>
-        <a href="list.html"><i class="fa fa-calendar" style="font-size:20px"> </i> List</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="book.html">Book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="list.html">List</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-      
-      </div>
-      <div class="container">
-        
-      <p> WELCOME TO <br> ROOM BOOKING <br>SYSTEM !!!
-      
-      <a href="book.html" class="button">Please Click Here to Book a Room  </a>
-    </p>
-     
-</div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+        <!-- Jumbotron -->
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4">Discover your tast palates!</h1>
+                    <p class="lead">With thousands menu to choose from, the only thing you need is your gut!</p>
+                    <hr class="my-4">
+                    <a class="btn btn-primary btn-lg" href="book.html" role="button">I'm ready, lets do this!</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-crossorigin="anonymous"></script>
-<script src="js/index.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
