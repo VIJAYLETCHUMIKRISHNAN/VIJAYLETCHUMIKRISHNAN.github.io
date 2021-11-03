@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ONLINE BUS Booking</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="book.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+<body>
+       
+        <div class="header"  style="font-family:Times New Roman;">
+
+            <a href="#default" class="logo"><i class="fa fa-building"  style="font-size:30px"></i> ONLINE BUS BOOKING</a>
+            <div class="header-right">
+            <a href="index.html"><i class="fa fa-home" style="font-size:20px"> </i> Home</a>
+            <a href="book.html"><i class="fa fa-calendar" style="font-size:20px"> </i> Booking</a>
+            <a href="list.html"><i class="fa fa-calendar" style="font-size:20px"> </i> List</a>
+            </div>
+          
+          </div>
+          <br>
+                     
+                    <h1><i>WELCOME TO BUS BOOKING SYSTEM</i></h1>
+
+        <!-- Booking Form -->
+
+        <div class="container_b">
+
+            
+              <div class="input-container">
+                <i class="fa fa-user icon"> Name</i>
+                <input class="input-field" id="userName" type="text1" placeholder="Enter Your Name..." name="userName" required>
+              </div>
+            
+              <div class="input-container">
+                <i class="fa fa-envelope icon"> Email</i>
+                <input class="input-field" id="userEmail" type="text1" placeholder="Enter Your Email..." name="userEmail" required>
+              </div>
+            
+              <div class="input-container">
+                <i class="fa fa-bus icon"> Bus Type</i>
+                <select id="busType" type="text1" placeholder="Select the type of bus..." name="busType" required>
+                    <option value="Baron Bus">Baron Bus </option>
+                    <option value="Express Arrow">Express Arrow</option>
+                    <option value="FlixBus">FlixBus </option>
+                    <option value="BoltBus">BoltBus </option>
+    
+                </select>
+              </div>
+            
+              <div class="input-container">
+                <i class="fa fa-calendar icon"> Onward Date</i>
+                <input class="input-field" id="aDate" type="date" placeholder="Onward Date" name=aDate">
+              </div>
+        
+            
+              <div class="input-container">
+                <i class="fa fa-calendar icon"> Return Date</i>
+                <input class="input-field" id="rDate" type="date" placeholder="Return Date" name="rDate">
+              </div>
+            
+              <div class="input-container">
+                <i class="fa fa-home icon"> Remarks</i>
+                <textarea id="sRemarks" name="sRemarks" rows="3" cols="23" placeholder="Mention if u have anything.." required=""></textarea>
+              </div>
+
+              <div class="input-container">
+                <i class="fa fa-user icon"> From</i>
+                <input class="input-field" id="userFrom" type="text1" placeholder="From..." from="userFrom" required>
+              </div>
+
+              <div class="input-container">
+                <i class="fa fa-user icon"> To</i>
+                <input class="input-field" id="userTo" type="text1" placeholder="To..." to="userTo" required>
+              </div>
+            
+              <button type="button" name="bookNow" class="btn" id="bookNow">Book Now</button>
+            
+              <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="js/book.js"></script>
+            
+            </form>
+            
+            
+            </div>
+
+</body>
+
+</html>
